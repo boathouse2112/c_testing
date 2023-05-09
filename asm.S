@@ -1,11 +1,10 @@
 .intel_syntax noprefix
 
-.global add_2
-add_2:
-    mov rax, rdi
-    add rax, 2
+.extern print_args
 
 .global printf_asm
 printf_asm:
+    sub rsp, 8
     call print_args
+    add rsp, 8
     ret
