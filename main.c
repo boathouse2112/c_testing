@@ -1,12 +1,14 @@
 #include <stdio.h>
 
-int add_2(int addend);
+int printf_asm(char *fmt_string, int number);
 
 int main(void)
 {
-    int n = 1;
-    int n_plus_2 = add_2(n);
-    printf("Original: %d, Plus2: %d", n, n_plus_2);
+    char *fmt_string = "Your number: %d\n";
+    int number = 3;
+
+    printf_asm(fmt_string, number);
+    printf("Done.");
 
 	return 0;
 }
