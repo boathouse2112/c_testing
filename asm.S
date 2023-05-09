@@ -2,4 +2,5 @@
 
 .global add_2
 add_2:
-    mov ax, ax
+    mov rax, rdi
+    add rax, 2
