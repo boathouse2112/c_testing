@@ -2,6 +2,10 @@
 
 int printf_asm(char *fmt_string, int number);
 
+void print_args(char *arg1, int arg2) {
+    printf("arg1: %s, arg2: %d\n", arg1, arg2);
+}
+
 int main(void)
 {
     char *fmt_string = "Your number: %d\n";

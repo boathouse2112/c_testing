@@ -7,5 +7,5 @@ add_2:
 
 .global printf_asm
 printf_asm:
-    call printf
+    call print_args
     ret
