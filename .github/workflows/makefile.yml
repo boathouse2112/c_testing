@@ -15,3 +15,6 @@ jobs:
 
     - name: Run make
       run: make
+
+    - name: Run main
+      run: main
