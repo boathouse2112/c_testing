@@ -19,7 +19,9 @@ jobs:
         arch: x86
 
     - name: Run make
-      run: make
+      run: |
+        ls -la
+        make
       shell: alpine.sh {0}
 
     - name: Run main
