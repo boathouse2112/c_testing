@@ -17,11 +17,12 @@ jobs:
       uses: jirutka/setup-alpine@v1
       with:
         arch: x86
+    
+    - name: Install clang
+      run: apk add llvm make
 
     - name: Run make
-      run: |
-        ls -la
-        make
+      run: make
       shell: alpine.sh {0}
 
     - name: Run main
