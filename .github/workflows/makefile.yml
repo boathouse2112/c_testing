@@ -19,7 +19,7 @@ jobs:
         arch: x86
     
     - name: Install clang
-      run: apk add llvm make
+      run: apk add clang make
       shell: alpine.sh --root {0}
 
     - name: Run make
