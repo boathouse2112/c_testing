@@ -20,7 +20,7 @@ jobs:
     
     - name: Install clang
       run: apk add llvm make
-      shell: alpine.sh {0}
+      shell: alpine.sh --root {0}
 
     - name: Run make
       run: make
